@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>balalar</title>
+
+<style>
+
+body{
+    background-color: #ff5993; }
+
+#topbtn{
+    background-color: #bf42f4;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 6px;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #0e0a0e;
+    cursor: pointer;}
+
+#categorybtn{
+    background-color: #ff7700;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 6px;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #0e0a0e;
+    cursor: pointer;}
+
+#category{
+    display: none;}
+
+#contactus{
+    background-color: #dddddd;
+    font-size: 25px;
+    display: none;}
+
+
+
+
+
+</style>
+<script>
+
+function funcategory() {
+  var a = document.getElementById("category");
+  if (a.style.display === "none") {
+    a.style.display = "block";
+  } else {
+    a.style.display = "none";
+  }
+}
+</script>
+
+</head>
+
+
+<body>
+
+<h1 color="#0e0a0e"><center>BALALAR</center></h1>
+
+<center>
+<button id="topbtn" onclick="funcontact()">Contact us</button>
+<button id="topbtn">Random</button>
+<button id="topbtn" onclick="funcategory()">Category</button>
+<button id="topbtn">All</button>
+<button id="topbtn">Mine</button>
+<button id="topbtn">Top</button>
+<button id="topbtn">Log in</button>
+</center>
+
+<hr color="black" style="height: 3px; width: 1100px"/>
+
+<!--invisible----------------------------------------------->
+
+<!--category------------------------------------------------>
+<div id="category">
+<center>
+<button id="categorybtn">Actors</button>
+<button id="categorybtn">Singers</button>
+<button id="categorybtn">Instagram user</button>
+<button id="categorybtn">Model</button>
+<button id="categorybtn">Others</button>
+<button id="categorybtn">XXX</button>
+</center>
+</div>
+
+<!--contact us----------------------------------------------->
+<div id="contactus">
+    <center>
+    <p>instagram: <a href="https://www.instagram.com/iammgt/?hl=en">@iammgt</a></p>
+    <p>telegram: @iammgt</p>
+    <p>phone: 0935-185-1433</p>
+    <p>phone2: 0990-4631983</p>
+    <center>
+</div>
+
+
+
+</body>
+
+</html>

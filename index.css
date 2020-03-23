@@ -1,0 +1,166 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.topnav {
+  overflow: hidden;
+  color: black;
+  padding-left: 120px;
+}
+
+.topnav a {
+  padding-right: 60px;
+  padding-left: 120px;
+  margin-left: 100px;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.topnav a:hover {
+  padding-right: 60px;
+  padding-left: 60px;
+  background-color: #ddd;
+  color: black;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.content-sl{ 
+  animation-name: fadeInLeft;
+  animation-duration: 5s;
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.content-sl{ 
+  animation-name: fadeInLeft;
+  animation-duration: 5s;
+}
+
+
+/*3d image transition*/
+.slideshow{
+  margin: 0 auto;
+  padding-top: 50px;
+  height: 1700px;
+  box-sizing: border-box;
+}
+.content{
+  margin: auto;
+  width: 180px;
+  perspective: 1600px;
+  position: relative;
+  padding-top: 80px;
+}
+
+.content-carrousel{
+  width: 100%;
+  position: absolute;
+  float: right;
+  animation: rotar 15s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+  animation-play-state : paused;
+  cursor: pointer;
+   -webkit-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  transform: scale(1.9);
+
+
+}
+
+.content-carrousel figure{
+  width: 100%;
+  height: 120px;
+  border:1px solid #4d444d;
+  overflow: hidden;
+  position: absolute;
+}
+
+.content-carrousel figure:nth-child(1){
+  transform: rotateY(90deg) translateZ(200px);
+}
+.content-carrousel figure:nth-child(2){
+  transform: rotateY(180deg) translateZ(200px);
+}
+.content-carrousel figure:nth-child(3){
+  transform: rotateY(270deg) translateZ(200px);
+}
+.content-carrousel figure:nth-child(4){
+  transform: rotateY(360deg) translateZ(200px);
+}
+
+.shadow{
+  position: absolute;
+  
+  border-radius: 2px;
+}
+
+.content-carrousel img{
+image-rendering: auto;
+transition: all 300ms;
+width: 100%;
+height: 100%;
+}
+
+.content-carrousel img:hover{
+  transform: scale(1.4);
+  transition: all 300ms;
+}
+
+@keyframes rotar{
+  from{
+    transform: rotateY(0deg);
+  } to{
+    transform: rotateY(360deg);
+  }
+}
+
+/*footer*/
+#sub-news{
+  margin-left: 250px;
+  margin-top: 30px;
+
+}
+#subscribe{
+  width: 200px;height:46px;font-size: 20px;background-color: black; color: white; 
+  border: 1px solid black;
+}
+
+#subscribe:hover{
+  color: black;
+  background-color: white;
+}
